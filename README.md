@@ -41,23 +41,31 @@ The project simulates:
 
 ## Architecture Flowchart
 
-```mermaid
+## 🔁 Architecture Flowchart
+
 flowchart LR
-    A[Industrial Boiler\nDigital Twin Simulator] -->|Telemetry Data| B[MQTT Broker]
-    B -->|MQTT Messages| C[SOC Dashboard\n(Streamlit)]
+    A[Industrial Boiler Digital Twin Simulator]
+    B[MQTT Broker]
+    C[SOC Dashboard - Streamlit]
+    D[Integrity Verification Engine]
+    E[Secure Data Visualization]
+    F[FDI Attack Alert]
+    G[Live Monitoring View]
+    H[Trend and Correlation Analysis]
+    I[Security Alert Banner]
+    J[Threat Level Escalation]
 
-    A -->|SHA-256 Hash\nGeneration| A
-    C -->|Hash Recalculation| D[Integrity Verification Engine]
+    A -->|Telemetry Data| B
+    B -->|MQTT Messages| C
+    A -->|SHA-256 Hash Generation| A
+    C -->|Hash Recalculation| D
+    D -->|Verified| E
+    D -->|Mismatch Detected| F
+    E --> G
+    E --> H
+    F --> I
+    F --> J
 
-    D -->|Verified| E[Secure Data Visualization]
-    D -->|Mismatch Detected| F[FDI Attack Alert]
-
-    E --> G[Live Monitoring View]
-    E --> H[Trend & Correlation Analysis]
-
-    F --> I[Security Alert Banner]
-    F --> J[Threat Level Escalation]
-```
 ---
 ## Architecture Explanation
 
@@ -220,4 +228,5 @@ Industrial IoT | Digital Twins | OT Security
 
 This project demonstrates a security-aware Industrial Digital Twin by combining IoT simulation, real-time monitoring, and cryptographic integrity verification.
 It highlights the importance of trustworthy telemetry in safety-critical industrial environments and serves as a strong academic and practical example of secure IIoT system design.
+
 
