@@ -55,6 +55,21 @@ flowchart LR
     I[Security Alert Banner]
     J[Threat Level Escalation]
 
+## 🔁 Architecture Flowchart
+
+```mermaid
+flowchart LR
+    A[Industrial Boiler Digital Twin Simulator]
+    B[MQTT Broker]
+    C[SOC Dashboard - Streamlit]
+    D[Integrity Verification Engine]
+    E[Secure Data Visualization]
+    F[FDI Attack Alert]
+    G[Live Monitoring View]
+    H[Trend and Correlation Analysis]
+    I[Security Alert Banner]
+    J[Threat Level Escalation]
+
     A -->|Telemetry Data| B
     B -->|MQTT Messages| C
     A -->|SHA-256 Hash Generation| A
@@ -65,7 +80,7 @@ flowchart LR
     E --> H
     F --> I
     F --> J
-
+```
 ---
 ## Architecture Explanation
 
@@ -228,5 +243,6 @@ Industrial IoT | Digital Twins | OT Security
 
 This project demonstrates a security-aware Industrial Digital Twin by combining IoT simulation, real-time monitoring, and cryptographic integrity verification.
 It highlights the importance of trustworthy telemetry in safety-critical industrial environments and serves as a strong academic and practical example of secure IIoT system design.
+
 
 
