@@ -1,4 +1,4 @@
-# Secure Industrial Boiler Digital Twin  
+# Boiler Guard  
 ### Cybersecurity-Aware Industrial IoT Monitoring using MQTT & SHA-256
 
 A **Secure Digital Twin** for an Industrial Boiler that simulates real-time telemetry, transmits data using **MQTT**, and verifies **data integrity using SHA-256 hashing**.  
@@ -243,6 +243,7 @@ Industrial IoT | Digital Twins | OT Security
 
 This project demonstrates a security-aware Industrial Digital Twin by combining IoT simulation, real-time monitoring, and cryptographic integrity verification.
 It highlights the importance of trustworthy telemetry in safety-critical industrial environments and serves as a strong academic and practical example of secure IIoT system design.
+
 
 
 
